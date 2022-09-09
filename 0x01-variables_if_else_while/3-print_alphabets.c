@@ -21,5 +21,6 @@ int main(void)
 		putchar(upperCount);
 		upperCount += 1;
 	}
+	putchar(10);
 	return (0);
 }
