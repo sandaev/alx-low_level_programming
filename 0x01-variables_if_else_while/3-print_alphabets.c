@@ -22,4 +22,4 @@ int main(void)
 		upperCount += 1;
 	}
 	return (0);
-
+}
