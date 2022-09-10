@@ -13,7 +13,7 @@ int main(void)
 	do {
 		putchar(c);
 		c += 1;
-	} while (c <=57);
+	} while (c <= 57);
 	putchar(10);
 	return (0);
 }
