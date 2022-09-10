@@ -12,7 +12,7 @@ int main(void)
 
 	while (count <= 122)
 	{
-		if ( count != 101 || count != 113)
+		if (count != 101 || count != 113)
 			putchar(count);
 		count += 1;
 	}
