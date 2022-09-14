@@ -6,19 +6,19 @@
  */
 void jack_bauer(void)
 {
-	int h1, h2, m1, m2;
+	char h1, h2, m1, m2;
 
-	h1 = 0;
-	while (h1 <= 2)
+	h1 = 48;
+	while (h1 <= 50)
 	{
-		h2 = 0;
-		while (h2 <= 3)
+		h2 = 48;
+		while (h2 <= 51)
 		{
-			m1 = 0;
-			while (m1 <= 5)
+			m1 = 48;
+			while (m1 <= 53)
 			{
-				m2 = 0;
-				while (m2 <= 9)
+				m2 = 48;
+				while (m2 <= 57)
 				{
 					_putchar(h1);
 					_putchar(h2);
