@@ -2,6 +2,8 @@
 /**
  * _islower - Checks if letter is a lowercase
  *
+ * @c: the character to be tested
+ *
  * Return: Returns 1 if lower case and 0 if not
  */
 int _islower(int c)
@@ -19,5 +21,5 @@ int _islower(int c)
 			result = 0;
 	}
 
-	return result;
+	return (result);
 }
