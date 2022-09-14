@@ -6,16 +6,15 @@
  */
 int main(void)
 {
-	char myString = "_putchar";
-
+	char myString[] = "_putchar";
 	int i;
 
-	for ( i = 0; myString[i] != '\n'; i++)
+	for ( i = 0; myString[i] != '\0'; i++)
 	{
 		_putchar(myString[i]);
 	}
 	_putchar('\n');
 
-	return (0)
+	return (0);
 }
 
