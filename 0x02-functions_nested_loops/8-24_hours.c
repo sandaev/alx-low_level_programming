@@ -12,8 +12,10 @@ void jack_bauer(void)
 	while (h1 <= 50)
 	{
 		h2 = 48;
-		while (h2 <= 51)
+		while (h2 <= 57)
 		{
+			if (h1 == 50 && h2 == 51)
+				break;
 			m1 = 48;
 			while (m1 <= 53)
 			{
