@@ -7,9 +7,9 @@
  * Return: 1 if postive, 0 if zero and -1 if n is negative 
  */
 int print_sign(int n)
-{
-	int result;
+{	int result;
 	char sign;
+
 	if (n > 0)
 	{
 		sign = '+';
