@@ -11,22 +11,14 @@ void print_times_table(int n)
 {
 	int row, col;
 
-	if (0 < n  && n <= 15)
+	if (0 <= n  && n <= 15)
 	{
 		for (row = 0; row <= n; row++)
 		{
 			for (col = 0; col <= n; col++)
 			{
-				if (row * col < 10)
-				{
-					printf("%3d", row * col);
-				}
-				else if (row * col >= 10)
-				{
-					if ( row * col >= 100)
-						printf("%1d", row * col);
-					printf("%2d", row * col);
-				}
+				printf("%3d", row * col);
+				
 				if (col < n)
 					printf(", ");
 			}
