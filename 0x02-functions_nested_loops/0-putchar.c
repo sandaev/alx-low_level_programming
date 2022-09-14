@@ -10,8 +10,7 @@ int main(void)
 	int i;
 
 	for ( i = 0; myString[i] != '\0'; i++)
-	{
-		_putchar(myString[i]);
+	{	_putchar(myString[i]);
 	}
 	_putchar('\n');
 
