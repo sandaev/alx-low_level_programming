@@ -17,7 +17,7 @@ void print_times_table(int n)
 		{
 			for (col = 0; col <= n; col++)
 			{
-				printf("%3d", row * col);
+				printf("%2d", row * col);
 				if (col < n)
 					printf(", ");
 			}
