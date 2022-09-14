@@ -3,6 +3,8 @@
  * print_sign - prints the sign of a number
  *
  * @n: the number whose sign to be printed
+ *
+ * Return: 1 if postive, 0 if zero and -1 if n is negative 
  */
 int print_sign(int n)
 {
@@ -24,7 +26,6 @@ int print_sign(int n)
 		sign = '0';
 		result = 0;
 	}
-	
 	_putchar(sign);
 	return (result);
 }
