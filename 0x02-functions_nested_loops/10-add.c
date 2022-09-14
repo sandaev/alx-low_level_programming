@@ -2,9 +2,9 @@
 /**
  * add- adds two integers.
  *
- * @a- first operand.
+ * @a: first operand.
  *
- * @b- second operand.
+ * @b: second operand.
  *
  * Return: Returns sum
  */
