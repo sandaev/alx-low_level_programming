@@ -6,7 +6,7 @@
  *
  * Return: Always 1 if trest is true otherwise 0
  */
-int _is alpha(int c)
+int _isalpha(int c)
 {
 	int check, result, temp;
 
