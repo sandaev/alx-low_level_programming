@@ -16,6 +16,7 @@ void times_table(void)
 			_putchar(row*col);
 			if (col < 57)
 				_putchar(',');
+			_putchar(' ');
 		}
 	}
 }
