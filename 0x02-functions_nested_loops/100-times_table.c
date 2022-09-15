@@ -17,10 +17,10 @@ void print_times_table(int n)
 		{
 			for (col = 0; col <= n; col++)
 			{
-				printf("%3d", row * col);
+				printf("%d", row * col);
 				
 				if (col < n)
-					printf(", ");
+					printf("%3s", ",");
 			}
 			printf("\n");
 		}
