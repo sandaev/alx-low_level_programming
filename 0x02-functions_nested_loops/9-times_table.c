@@ -8,7 +8,7 @@ void times_table(void)
 {
 	char row, col;
 
-	for (row = 48; row <= 57 row++)
+	for (row = 48; row <= 57; row++)
 	{
 		for (col = 48; col <= 57; col++)
 		{
