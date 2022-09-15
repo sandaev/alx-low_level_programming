@@ -7,15 +7,15 @@
  */
 void times_table(void)
 {
-	char row, col;
+	int row, col;
 
 	for (row = 0; row <= 9; row++)
 	{
 		for (col = 0; col <= 9; col++)
 		{
-			printf("%1d", row * col);
+			printf("%2d", row * col);
 			if (col < 9)
-				printf(",");
+				printf(", ");
 		}
 	}
 }
