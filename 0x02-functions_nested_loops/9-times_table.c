@@ -17,5 +17,6 @@ void times_table(void)
 			if (col < 9)
 				printf(", ");
 		}
+		printf("\n");
 	}
 }
