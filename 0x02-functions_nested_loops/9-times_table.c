@@ -13,9 +13,9 @@ void times_table(void)
 	{
 		for (col = 0; col <= 9; col++)
 		{
-			printf("%2d", row * col);
+			printf("%1d", row * col);
 			if (col < 9)
-				printf(", ");
+				printf(",");
 		}
 	}
 }
