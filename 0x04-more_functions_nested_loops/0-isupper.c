@@ -8,19 +8,19 @@
  */
 int _isupper(int c)
 {
-	int i;
+	int i, num;
 
 	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (c == i)
 		{
-			return (1);
+			num = 1;
 		}
 		else
 		{
-			return (0);
+			num = 0;
 		}
 	}
-	_putchar('\n');
+	return (num);
 }
 
