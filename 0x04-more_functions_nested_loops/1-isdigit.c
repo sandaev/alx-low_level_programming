@@ -18,4 +18,7 @@ int _isdigit(int c)
 			num = 0;
 		}
 	}
-}	return (num);	
+	return (num);
+}
+
+
