@@ -1,4 +1,3 @@
-#include <unistd.h>
 /**
  * _isdigit - checks for a digit (0 through 9).
  * @c: digit to check
