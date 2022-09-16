@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
  * _isupper- checks for uppercase
@@ -8,7 +9,8 @@
  */
 int _isupper(int c)
 {
-	int i, num;
+	int num;
+	char i;
 
 	for (i = 'A'; i <= 'Z'; i++)
 	{
