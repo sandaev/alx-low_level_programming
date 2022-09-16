@@ -19,6 +19,5 @@ int _isdigit(int c)
 			num = 0;
 		}
 	}
-	_putchar('\n');
 	return (num);
 }
