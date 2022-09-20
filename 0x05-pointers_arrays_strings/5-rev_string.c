@@ -6,7 +6,7 @@
  *
  * Return: Void
  */
-void rev_string(chat *s)
+void rev_string(char *s)
 {
 	int len, i;
 	char ch, *begin_str, *end_str;
