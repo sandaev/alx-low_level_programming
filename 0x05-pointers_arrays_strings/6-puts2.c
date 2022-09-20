@@ -12,13 +12,18 @@ void puts2(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
+		if (i == 0)
+		{
+			_putchar(*(s + i));
+		}
 		if (i % 2)
 		{
-			if (*(s + i) != " ")
-			{
-				continue;
-			}
+			continue;
 		}
-		_putchar(*(s + i));
+		else
+		{
+
+			_putchar(*(s + i));
+		}
 	}
 }
