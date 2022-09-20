@@ -26,6 +26,7 @@ void rev_string(char *s)
 	while (i < len - 1)
 	{
 		end_str++;
+		i++;
 	}
 	/* Swap characters from beginning and ending */
 	i = 0;
