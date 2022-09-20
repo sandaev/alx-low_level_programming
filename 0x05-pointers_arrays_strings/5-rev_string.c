@@ -13,13 +13,13 @@ void rev_string(char *s)
 
 	/* Initializatio */
 	len = 0;
-	*begin_str = s;
-	*end_str = s;
+	begin_str = s;
+	end_str = s;
 
 	/* Determine the length of strig */
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		len++
+		len++;
 	}
 	/* Shift end_str to the end */
 	i = 0;
