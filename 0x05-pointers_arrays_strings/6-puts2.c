@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts - prints every other character of a string, followed by a new line
+ * puts2 - prints every other character of a string, followed by a new line
  *
  * @s: pointer to the string
  *
@@ -12,7 +12,7 @@ void puts2(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (i % 2)
+		if (i % 2 && *(s + 1) != " ")
 		{
 			continue;
 		}
