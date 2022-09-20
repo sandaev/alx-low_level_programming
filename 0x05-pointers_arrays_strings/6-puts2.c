@@ -12,9 +12,12 @@ void puts2(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (i % 2 && *(s + 1) != " ")
+		if (i % 2)
 		{
-			continue;
+			if (*(s + i) != " ")
+			{
+				continue;
+			}
 		}
 		_putchar(*(s + i));
 	}
