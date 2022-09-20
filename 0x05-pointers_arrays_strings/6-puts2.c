@@ -16,7 +16,7 @@ void puts2(char *s)
 		{
 			_putchar(*(s + i));
 		}
-		if (i % 2)
+		else if (i % 2)
 		{
 			continue;
 		}
