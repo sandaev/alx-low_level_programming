@@ -13,7 +13,7 @@
 int main(void)
 {
 	char pswrd[58];
-	char ch = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+	char ch[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	int i, num, k, l;
 
 	srand(time(NULL));
@@ -25,7 +25,7 @@ int main(void)
 		{
 			num = rand() % 62;
 			pswrd[i] = ch[num];
-			s += ch[num];
+			l += ch[num];
 			i++;
 		}
 		while (ch[k])
