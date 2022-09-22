@@ -11,11 +11,11 @@
 char *_strcat(char *dest, char *src)
 {
 	static char *ptrDest;
-	int len, lenDest;
+	int len, lenDest, i;
 
 	len = 0;
 	/* Get the length of dest */
-	for (int i = 0; *(dest + i) != '\0'; i++)
+	for (i = 0; *(dest + i) != '\0'; i++)
 	{
 		len++
 	}
@@ -24,7 +24,7 @@ char *_strcat(char *dest, char *src)
 	len = 0;
 	len = lenDest;
 	/* Add the characters of src to dest */
-	for (int i = 0; *(src + i) != '\0'; i++)
+	for (i = 0; *(src + i) != '\0'; i++)
 	{
 		*(dest + (lenDest + i)) = *(src + i);
 		len++;
