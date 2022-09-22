@@ -12,15 +12,15 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *destPtr;
-	int totalBytes, lenDest;
+	char *ptrDest;
+	int totalBytes, lenDest, i, j;
 
 	totalBytes = lenDest = 0;
-	for (int i = 0; *(dest + i) != '\0'; i++)
+	for (i = 0; *(dest + i) != '\0'; i++)
 	{
 		lenDest++;
 	}
-	for (int j = 0; *(src + j) != '\0'; j++)
+	for (j = 0; *(src + j) != '\0'; j++)
 	{
 		if (totalBytes <= n)
 		{
@@ -32,6 +32,6 @@ char *_strncat(char *dest, char *src, int n)
 			break;
 		}
 	}
-	destPtr = dest;
-	return (destPtr);
+	ptrDest = dest;
+	return (ptrDest);
 }
