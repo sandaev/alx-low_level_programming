@@ -25,7 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 		if (totalBytes <= n)
 		{
 			*(dest + (lenDest + j)) = *(src + j);
-			totalBytes += sizeof(j);
+			totalBytes += 1;
 		}
 		else
 		{
