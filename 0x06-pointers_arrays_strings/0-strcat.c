@@ -20,14 +20,10 @@ char *_strcat(char *dest, char *src)
 		len++
 	}
 
-	lenDest = len;
-	len = 0;
-	len = lenDest;
-	/* Add the characters of src to dest */
-	for (i = 0; *(src + i) != '\0'; i++)
+	/* concatenate src to dest */
+	for (i = 0; *(src + i) != '\0'; i++, len++)
 	{
-		*(dest + (lenDest + i)) = *(src + i);
-		len++;
+		*(dest + len) = *(src + i);
 	}
 
 	*(dest + len) = '\0';
