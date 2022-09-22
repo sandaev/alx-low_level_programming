@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * string_toupper - Converts lowercase letters in a string to
  * uppercase
@@ -10,7 +9,7 @@
  */
 char *string_toupper(char *s)
 {
-	char *ptr, ch;
+	char *ptr;
 	int i, j;
 
 	const char UPPER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
