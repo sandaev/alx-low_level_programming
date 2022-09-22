@@ -8,7 +8,7 @@
  *
  * Retutn: void
  */
-void reverse_array(char *a, int n)
+void reverse_array(int *a, int n)
 {
 	int temp, start, end;
 
