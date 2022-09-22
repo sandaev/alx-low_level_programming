@@ -13,8 +13,8 @@ char *string_toupper(char *s)
 	char *ptr, ch;
 	int i, j;
 
-	const char UPPER[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	const char LOWER[26] = "abcdefghijklmnopqrstuvwxyz";
+	const char UPPER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	const char LOWER[] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
