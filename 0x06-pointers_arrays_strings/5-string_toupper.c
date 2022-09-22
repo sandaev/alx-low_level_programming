@@ -20,7 +20,7 @@ char *string_toupper(char *s)
 	{
 		for (j = 0; j < 26; j++)
 		{
-			if ( *(s + i) == LOWER[j])
+			if (*(s + i) == LOWER[j])
 			{
 				*(s + i) = UPPER[j];
 			}
@@ -32,3 +32,4 @@ char *string_toupper(char *s)
 	}
 	ptr = s;
 	return (ptr);
+}
