@@ -1,12 +1,13 @@
 #include "main.h"
+#define KEY 13
 /**
  *rot13 - Encodes a string
  *
- *@str: string to be encoded
+ *@s: string to be encoded
  *
  *Return: Encoded string
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	char *ptr;
 	int i;
