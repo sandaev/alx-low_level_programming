@@ -14,23 +14,31 @@ char *cap_string(char *s)
 	/* Check each letter */
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		/* is first letter lowercase */
-		if ((*(s + i) >= 'a' && *(s + i) <= 'A'))
+		if (i == 0)
 		{
-			*(s + i) = *(s + i) - 32; /* capitalize*/
+
+			/* is first letter lowercase */
+			if ((*(s + i) >= 'a' && *(s + i) <= 'z'))
+			{
+				*(s + i) = *(s + i) - 32; /* capitalize*/
+			}
+			continue; /* If not continue iterating */
 		}
-		continue; /* If not continue iterating */
-	}
-	ch = *(s + i);
-	if ((ch >= ' ' && ch <= '"') || ch == '\n' || ch == '\t') 
-	{
-		continue;
-	}
-	else
-	{
-		if ((ch >= 'a' && ch <= 'z'))
+		ch = *(s + i);
+		if ((ch >= ' ' && ch <= '"') || ch == '\n' || ch == '\t') 
 		{
-			*(s + i) = *(s + i) - 32;
+			continue;
+		}
+		else
+		{
+			if ((ch >= 'a' && ch <= 'z'))
+			{
+				*(s + i) = *(s + i) - 32;
+			}
+			else
+			{
+				continue;
+			}
 		}
 	}
 	ptr = s;
