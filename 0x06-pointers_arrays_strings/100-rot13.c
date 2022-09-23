@@ -30,6 +30,6 @@ char *rot13(char *s)
 		}
 		i++;
 	}
-	ptr = str;
+	ptr = s;
 	return (ptr);
 }
