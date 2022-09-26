@@ -23,7 +23,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	}
 	for (j = 0; k = size; j <= n; k < size + n; j++; k++)
 	{
-		*(dest + i) = *(src + j);
+		*(dest + k) = *(src + j);
 	}
 	ptr = dest;
 	return (ptr);
