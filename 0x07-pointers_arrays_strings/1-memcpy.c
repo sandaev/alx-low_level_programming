@@ -13,19 +13,17 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *ptr;
-	unsigned int i, size, j, k;
+	unsigned int i, j, size;
 
-	i = 0; 
-	size = 0;
+	i = 0;
 	while (*(dest + i))
 	{
-		size++;
 		i++;
 	}
-	k = size;
-	for (j = 0; j <= n, k < size + n; j++, k++)
+	size = i;
+	for (j = 0; j <= n, i < size + n; j++, i++)
 	{
-		*(dest + k) = *(src + j);
+		*(dest + i) = *(src + j);
 	}
 	ptr = dest;
 	return (ptr);
