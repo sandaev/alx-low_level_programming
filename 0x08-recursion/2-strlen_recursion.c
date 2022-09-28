@@ -4,7 +4,7 @@
  *
  * @s: string to be worked on
  *
- * Retuen: Integer
+ * Return: Integer
  */
 int _strlen_recursion(char *s)
 {
