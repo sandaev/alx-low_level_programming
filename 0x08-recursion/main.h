@@ -10,3 +10,5 @@ int factorial(int n);
 int _pow_recursion(int n, int y);
 int _sqrt_recursion(int n);
 int divide(int n, int y);
+int is_prime_number(int n);
+int isPrime(int n, int y, int c);
