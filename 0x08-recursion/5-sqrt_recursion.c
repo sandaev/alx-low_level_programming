@@ -44,9 +44,5 @@ int divide(int n, int y)
 			divide(n, y + 1);
 		}
 	}
-	else
-	{
-		divide(n, y + 1);
-	}
-	;
+	return (divide(n, y + 1));
 }
