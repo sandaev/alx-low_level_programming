@@ -49,7 +49,9 @@ int isPrime(int n, int y, int c)
 		}
 		else
 		{
-			isPrime(n, y + 1);
+			isPrime(n, y + 1, c);
 		}
+
 	}
+	return (isPrime(n, y + 1, c));
 }
