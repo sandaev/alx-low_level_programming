@@ -6,12 +6,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int i = 0;
+
 
 	/* For loop to print name of programme */
-	for (i == 0; argv[0][i]; i++)
+	for ( ; argv[argc - 1][i]; i++)
 	{
 		_putchar(argv[0][i]);
 	}
 	_putchar('\n');
+	return (0);
 }
