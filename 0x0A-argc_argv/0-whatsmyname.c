@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 	int i;
 
 	/* For loop to print name of programme */
-	for (i == 0; i != '\n'; i++)
+	for (i == 0; argv[0][i]; i++)
 	{
 		_putchar(argv[0][i]);
 	}
