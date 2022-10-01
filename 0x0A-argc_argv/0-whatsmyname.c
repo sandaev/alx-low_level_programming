@@ -1,5 +1,5 @@
 #include "main.h"
-/*main - Entry point
+/** main - Entry point
  *@argc: Number of command line arguments
  *@argv: array of all command line arguments
  *Returrn: 0 On success
