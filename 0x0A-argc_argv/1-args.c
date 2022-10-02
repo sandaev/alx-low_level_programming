@@ -11,6 +11,7 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
+	/* Prints the number of arguments passed */
 	printf("%d\n", argc);
 	return (0);
 }
