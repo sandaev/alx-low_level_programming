@@ -1,28 +1,16 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * main - Entry point, prints number of arguments passed
+ * main - Entry point, prints the number of arguments passed
  *
- * @argc: number of arguments
+ * @argc: Arguments count
  *
- * @argv: array of
+ * @argv: Array of command line arguments
  *
- * @Return: Integer
+ * Return: Always 0
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	/* Declare variable to hold the count */
-	int i;
-
-	i = argc - 1;
-	/* If i greater than zero, call hellper function. Otherwise, print zero)*/
-	if (i > 0)
-	{
-		_print_num(i);
-	}
-	else
-	{
-		_putchar('0');
-	}
-	_putchar('\n');
+	printf("%d\n", argc);
 	return (0);
 }
