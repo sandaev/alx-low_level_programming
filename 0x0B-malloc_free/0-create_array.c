@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	/* If size is 0 or cannot allocate memory, return 1 */
 	if (size == NULL || ar == NULL)
 	{
-		return (1);
+		return (NULL);
 	}
 	/* Initialize array with c */
 	for (i = 0; i < size; i++)
