@@ -15,19 +15,24 @@ char *_strdup(char *str)
 	char *_str;
 	int len, i;
 
-	/* Get length of str */
+	/* Check if str is null or empty */
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	/* Get the length of str */
 	len = 0;
 	while (str[len])
 	{
 		len++;
 	}
-	/* Allocation memory */
+	/* Allocate memory */
 	_str = malloc(len * sizeof(char) + 1);
-	/* Check if memory is assigned or not */
-	if (_str == NULL || str == NULL)
+	if (_str == NULL)
 	{
 		return (NULL);
 	}
+	/* Copy str into memory and return pointer to memory */
 	for (i = 0; i <= len; i++)
 	{
 		_str[i] = str[i];
