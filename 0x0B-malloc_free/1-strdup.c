@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	/* Allocation memory */
 	_str = malloc(len * sizeof(char) + 1);
 	/* Check if memory is assigned or not */
-	if (str == NULL || _str == NULL)
+	if (len == 0 || _str == NULL)
 	{
 		return (NULL);
 	}
