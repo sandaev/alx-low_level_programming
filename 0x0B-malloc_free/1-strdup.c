@@ -28,9 +28,13 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= len; i++)
+	else
 	{
-		_str[i] = str[i];
+
+		for (i = 0; i <= len; i++)
+		{
+			_str[i] = str[i];
+		}
+		return (_str);
 	}
-	return (_str);
 }
