@@ -10,20 +10,25 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	/* Declare variables */
 	char *arr;
 	unsigned int i;
 
+	/*Check if argumets are zero */
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	arr = malloc(nmemb * size);
+	/* Allocate memory */
+	arr = malloc((nmemb * size));
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
+	/* Initialize array with 0 */
 	for (i = 0; i < nmemb; i++)
 	{
 		arr[i] = 0;
 	}
+	return (arr);
 }
