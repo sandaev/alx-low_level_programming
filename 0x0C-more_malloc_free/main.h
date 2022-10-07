@@ -6,3 +6,4 @@ unsigned int mal_size(char *s1, char *s2, unsigned n);
 int _strlen(char *str);
 void _putchar(char c);
 char *string_nconcat(char *s1,  char *s2, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
