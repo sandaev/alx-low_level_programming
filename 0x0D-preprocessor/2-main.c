@@ -9,10 +9,9 @@ int main(void)
 {
 	/* Declares variables */
 	int i;
-	char s[];
+	char s[] = __FILE__;
 
 	/* Initialize s with the macors __FILE__ */
-	s = __FILE__;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
