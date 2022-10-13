@@ -1,6 +1,5 @@
 #ifndef function_pointers
 int _puchar(char c);
-#endif /* #ifndef */
-#ifndef print_name
 void print_name(char *name, void (*f)(char *));
+void array_iterator(int *array, size_t size, void (*action)(int));
 #endif /* #ifndef */
