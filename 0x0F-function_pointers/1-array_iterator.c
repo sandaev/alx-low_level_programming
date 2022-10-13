@@ -9,9 +9,9 @@
  *
  * @action: Pointer to the function to be execuated
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, unsigned int size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	while (i < size)
