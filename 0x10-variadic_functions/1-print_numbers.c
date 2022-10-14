@@ -30,4 +30,5 @@ void print_numbers(const char *separator, unsigned int n, ...)
 		printf("%s", separator);
 		c++;
 	}
+	printf('\n');
 }
