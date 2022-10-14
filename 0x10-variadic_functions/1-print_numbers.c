@@ -7,9 +7,7 @@
  *
  * @separator: pointer to string that separates the numbers
  *
- * @print_numbers(const char *separator, const unsinged int n, ...)
- * {
- * : Number of integers passed to the functions
+ *@n: Number of integers passed to the functions
  *
  * Return: Nothing
  */
