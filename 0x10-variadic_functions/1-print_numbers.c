@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdarg.h>
+#include "variadic_functions.h"
+/**
+ * print_numbers - Prints numbers
+ *
+ * @separator: pointer to string that separates the numbers
+ *
+ * @print_numbers(const char *separator, const unsinged int n, ...)
+ * {
+ * : Number of integers passed to the functions
+ *
+ * Return: Nothing
+ */
+void print_numbers(const char *separator, unsigned int n, ...)
+{
+	va_list nums;
+	ui num, c;
+
+	c = 0;
+	while (c < n)
+	{
+		num = va_arg(nums, ui);
+		printf("%d", num);
+		if (separator == NULL)
+		{
+			continue;
+		}
+		printf("%s", separator);
+		c++;
+	}
+}
