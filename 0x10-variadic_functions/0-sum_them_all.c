@@ -7,7 +7,7 @@
  *
  * Return: Integer sum
  */
-int sumn_them_all(const unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list argList;
 	ui sum, i;
