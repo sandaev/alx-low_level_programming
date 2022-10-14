@@ -31,11 +31,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 			printf("%s", str);
 		}
-		if (separator == NULL)
-		{
-			continue;
-		}
-		else if (!(c == (n - 1)))
+		if (!(separator == NULL) && !(c == (n - 1)))
 		{
 			printf("%s", separator);
 		}
