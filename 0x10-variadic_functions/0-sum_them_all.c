@@ -28,5 +28,5 @@ int sum_them_all(const unsigned int n, ...)
 	}
 	/* Clean up */
 	va_end(argList);
-	return (sum);
+	return ((int)sum);
 }
