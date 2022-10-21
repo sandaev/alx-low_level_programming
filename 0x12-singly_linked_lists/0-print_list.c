@@ -8,6 +8,9 @@ size_t print_list(const list_t *h)
 {
 	/* Number of elements */
 	size_t num = 0;
+	list_t *hv;
+
+	hv = h;
 
 	if (h = NULL)
 	{
@@ -22,7 +25,8 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%d] (null)\n", 0);
+			hv->len = 0;
+			printf("[%d] (null)\n", hv->len);
 		}
 		num++;
 		h = h->next;
