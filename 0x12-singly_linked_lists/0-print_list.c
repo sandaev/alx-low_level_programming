@@ -9,11 +9,6 @@ size_t print_list(const list_t *h)
 	/* Number of elements */
 	size_t num = 0;
 
-	if (h = NULL)
-	{
-		printf("Error\n");
-		return(1);
-	}
 	while (h != NULL)
 	{
 		if (h->str != NULL)
