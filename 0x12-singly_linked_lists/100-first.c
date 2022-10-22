@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * start_func - Executes before main executes
@@ -10,6 +10,5 @@
  */
 void start_func(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house
-			upon my back!\n");
+	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
 }
