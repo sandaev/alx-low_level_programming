@@ -24,7 +24,7 @@ int get_size(listint_t *head)
  * @n: value of new node
  * Return: pointer to new node
  */
-listint_t *imsert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *tmp, *new_node;
 	int size = get_size(*head);
@@ -41,7 +41,7 @@ listint_t *imsert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	/* If its first nofr */
 	else if (idx == 0)
 	{
-		new_node-> *head;
+		new_node->next = *head;
 		*head = new_node;
 	}
 	else
