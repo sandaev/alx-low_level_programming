@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_nodelist_at_index - Returns the
+ * get_nodeint_at_index - Returns the
  * nth node of a list
  * @head: pointer to list
  * @index: index of the node to return
