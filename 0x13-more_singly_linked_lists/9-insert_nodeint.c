@@ -26,19 +26,18 @@ int get_size(listint_t *head)
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *tmp, *new_node;
-	unsigned int size = get_size(*head);
+	listint_t *tmp;
+	listint_t *new_node;
+	unsigned int size;
+	size = get_size(*head);
 
-	/* Allocate memory*/
 	new_node = malloc(sizeof(listint_t));
 	new_node->n = n;
 	new_node->next = NULL;
-	/*Invalid index */
 	if (idx > size)
 	{
 		return (NULL);
 	}
-	/* If its first nofr */
 	else if (idx == 0)
 	{
 		new_node->next = *head;
