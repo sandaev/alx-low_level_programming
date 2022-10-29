@@ -32,3 +32,23 @@ unsigned int binary_to_unit(const char *b)
 	}
 	return (0);
 }
+/**
+ * _strlen - returns the length of str
+ * @str: pointer to string of bin
+ * Return: Nothing
+ */
+int _strlen(const char *str)
+{
+	int len = 0;
+
+	if (str == NULL)
+	{
+		return (0);
+	}
+	while (*str)
+	{
+		len++;
+		str++;
+	}
+	return (len);
+}
