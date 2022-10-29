@@ -7,9 +7,9 @@
  * @index: Index
  * Return: bit
  */
-int get_bit(unsigned lont int n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	int bit;
+	int bits;
 
 	bits = (n >> index) & 1;
 	if (bits == 0 || bits == 1)
