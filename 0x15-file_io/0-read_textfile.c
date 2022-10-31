@@ -35,7 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 	bf = buf;
 	wr = write(1, bf, letters);
-	if (wc == -1)
+	if (wr == -1)
 	{
 		return (0);
 	}
