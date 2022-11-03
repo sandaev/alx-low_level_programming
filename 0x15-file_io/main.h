@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 
 #ifndef MAINH
 #define MAINH
