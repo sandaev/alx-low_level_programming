@@ -22,7 +22,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 	}
 
-	len = add_dnodeint(h, n);
+	len = dnodeint_len(*h);
 
 	if (idx == 0)
 	{
