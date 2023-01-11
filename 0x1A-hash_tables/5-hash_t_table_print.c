@@ -1,3 +1,4 @@
+#include "hash_tables.h"
 /**
  * hash_table_print - This function prints a hash table
  * @ht: Pointer to hash table
