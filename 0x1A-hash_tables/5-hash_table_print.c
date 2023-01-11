@@ -28,18 +28,18 @@ void hash_table_print(const hash_table_t *ht)
 					head = ht->array[i];
 					while (head->next != NULL)
 					{
-						printf("%s: %s, ", head->key, head->value);
+						printf("'%s': '%s', ", head->key, head->value);
 						head = head->next;
 					}
 					num++;
 				}
 				if (num == count - 1)
 				{
-					printf("%s: %s}\n", ht->array[i]->key, ht->array[i]->value);
+					printf("'%s': '%s'}\n", ht->array[i]->key, ht->array[i]->value);
 				}
 				else
 				{
-					printf("%s: %s, ", ht->array[i]->key, ht->array[i]->value);
+					printf("'%s': '%s', ", ht->array[i]->key, ht->array[i]->value);
 					num++;
 				}
 			}
