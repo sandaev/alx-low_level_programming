@@ -27,7 +27,7 @@ int main(void)
 		dif_h2 = (sum - 2772) / 2;
 		if ((sum - 2772) % 2 != 0)
 			dif_h1++;
-		for (i = 0; pass[i] >= (33 + dif_h1))
+		for (i = 0; pass[i]; i++)
 		{
 			if (pass[i] >= (33 + dif_h1))
 			{
