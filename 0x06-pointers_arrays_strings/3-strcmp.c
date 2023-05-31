@@ -11,7 +11,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	/* Declare variables */
-	int i, g, l, e;
+	int i, g, l, e, ret;
 
 	i = g = l = e = 0;
 	while (s1[i] != '\0' || s2[i] != '\0')
@@ -35,9 +35,10 @@ int _strcmp(char *s1, char *s2)
 	}
 
 	if (e)
-		return (0);
+		ret = 0;
 	else if (g)
-		return (15);
+		ret = 15;
 	else if (l)
-		return (-15);
+		ret = -15;
+	return (ret);
 }
