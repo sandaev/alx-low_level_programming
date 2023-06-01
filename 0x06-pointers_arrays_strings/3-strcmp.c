@@ -11,37 +11,20 @@
 int _strcmp(char *s1, char *s2)
 {
 	/* Declare variables */
-	int i, g, l, e, ret;
+	int i, _s1, _s2;
 
-	i = g = l = e = 0;
-	if (s1[0] == '\0')
-		return (-15);
+	_s1 = _s2 = 0;
 
-	while (s1[i] != '\0')
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		if (s1[i] == s2[i])
-		{
-			e = 1;
-			g = l = 0;
-		}
-		else if (s1[i] > s2[i])
-		{
-			g = 1;
-			l = e = 0;
-		}
-		else if (s1[i] < s2[i])
-		{
-			l = 1;
-			g = e = 0;
-		}
-		i++;
+		_s1 += s1[i];
+		_s2 += s2[i];
 	}
 
-	if (e)
-		ret = 0;
-	else if (g)
-		ret = 15;
-	else if (l)
-		ret = -15;
-	return (ret);
+	if (_s1 == _s2)
+		return (0);
+	else if (_s1 > _s2)
+		return (15);
+	else
+		return (-15);
 }
