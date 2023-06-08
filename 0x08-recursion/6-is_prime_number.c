@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * is_prime_number - Chekcs if a number is prime
  * @n: Number
  *
  * Return: 1 if prime, 0 otherwise
  */
-int isPrime(int, int, int);
 int is_prime_number(int n)
 {
 	int y = 3;

@@ -10,5 +10,6 @@ int _pow_recursion(int n, int y);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
+int isPrime(int, int, int);
 
 #endif /* MAIN_H */
