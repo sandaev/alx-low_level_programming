@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -8,7 +9,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *men = malloc(b);
+	int *mem = malloc(b);
 
 	if (mem == 0)
 	{
