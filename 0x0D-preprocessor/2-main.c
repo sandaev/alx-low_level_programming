@@ -9,7 +9,7 @@ int main(void)
 {
 	/* Declaration */
 	int i;
-	char s[] = _FINE_;
+	char s[] = _FILE_;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
