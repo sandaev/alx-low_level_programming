@@ -1,32 +1,29 @@
+/* A function that searches for an integer */
+#include <stddef.h>
 #include "function_pointers.h"
+
 /**
- * int_index - Searches for an integer
+ * int_index - searches for an integer in @array
+ * @array: the array of type int
+ * @size: the size of the array
+ * @cmp: a pointer to the function used to compare values
  *
- * @array: Array
- *
- * @size: Size of array
- *
- * @cmp: Searching function
- *
- * Return: Integer
+ * Return: returns the index of the first element for which the @cmp does not
+ * return 0; returns -1 if no elment matches or if size <= 0.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	/* Varaiable  Declaration */
 	int i;
 
-	if (size <= 0)
+	if (array && cmp)
 	{
-		return (-1);
+		if (size <= 0)
+			return (-1);
+
+		for (i = 0; i < size; i++)
+			if (cmp(array[i]))
+				return (i);
 	}
-	i = 0;
-	while (i < size)
-	{
-		if (cmp(array[i]))
-		{
-			return (i);
-		}
-		i++;
-	}
+
 	return (-1);
 }
