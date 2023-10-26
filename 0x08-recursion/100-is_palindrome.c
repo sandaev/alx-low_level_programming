@@ -15,11 +15,11 @@ int _strlen(char *s)
 
 	if (*(s + l))
 	{
-		len++;
-		len += _strlen(s + len);
+		l++;
+		l += _strlen(s + l);
 	}
 
-	return (len);
+	return (l);
 }
 /**
  * check - Checks if s is a palindrome
@@ -47,7 +47,8 @@ int check(char *s, int len, int i)
  */
 int is_palindrome(char *s)
 {
-	int i, len;
+	int i;
+	int len;
 
 	i = 0;
 	len = _strlen(s);
