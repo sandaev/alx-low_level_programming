@@ -33,7 +33,7 @@ int check(char *s, int len, int i)
 {
 	if (s[i] == s[len / 2])
 		return (1);
-	if (s[index] == s[len - i - 1])
+	if (s[i	] == s[len - i - 1])
 		return (check(s, len, i));
 	return (0);
 }
