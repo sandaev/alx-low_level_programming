@@ -12,6 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
+	/* Variable Declaration */
 	int sum, i, c, flag;
 
 	sum = 0;
@@ -31,7 +32,7 @@ int main(int argc, char *argv[])
 			}
 			sum += atoi(argv[i]);
 		}
-		if ((c == --i && flag) && sum == 0)
+		if ((c == i && flag) && sum == 0)
 		{
 			printf("%d\n", 0);
 			return (0);
