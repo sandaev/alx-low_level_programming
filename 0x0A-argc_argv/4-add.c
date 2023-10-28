@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -13,37 +14,28 @@
 int main(int argc, char *argv[])
 {
 	/* Variable Declaration */
-	int sum, i, c, flag;
+	int sum, i, j;
 
-	sum = 0;
-	c = 0;
-	flag = 0;
+	i = 1;
+	sum = j = 0;
 
 	if (argc == 1)
 		printf("%d\n", 0);
 	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (; argv[i]; i++)
 		{
-			if (atoi(argv[i]) == 0)
+			for (j = 0; argv[i][j]; j++)
 			{
-				c++;
-				flag = 1;
+				if (!isdigit(argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 			sum += atoi(argv[i]);
 		}
-		if ((c == i && flag) && sum == 0)
-		{
-			printf("%d\n", 0);
-			return (0);
-		}
-		else if (flag && sum != 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-			printf("%d\n", sum);
+		printf("%d\n", sum);
 	}
 	return (0);
 }
