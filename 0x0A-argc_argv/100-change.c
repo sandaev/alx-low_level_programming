@@ -3,22 +3,6 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _digit - ensures numeric is passed
- * @argv: Numeric string
- *
- * Return: 1 on success, -1 otherwise
- */
-/*
-int _digit(char *argv[])
-{
-	int i, j;
-
-	for (i = 1, j = 0; argv[i][j] != '\n'; j++)
-		if (!isdigit(argv[i][j]))
-			return (-1);
-	return (1);
-}*/
-/**
  * _change - Determines minimum change
  * @num: Cents
  * @coin: Coins
@@ -86,9 +70,7 @@ int main(int argc, char *argv[])
 			else if (num >= 1)
 				num = _change(num, 1, ptr);
 		}
-	/*	printf("%d\n", *ptr);*/
 	}
-
 	printf("%d\n", count);
 
 	return (0);
