@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * _digit - ensures numeric is passed
@@ -7,6 +8,7 @@
  *
  * Return: 1 on success, -1 otherwise
  */
+/*
 int _digit(char *argv[])
 {
 	int i, j;
@@ -15,7 +17,7 @@ int _digit(char *argv[])
 		if (!isdigit(argv[i][j]))
 			return (-1);
 	return (1);
-}
+}*/
 /**
  * _change - Determines minimum change
  * @num: Cents
