@@ -11,7 +11,7 @@
 char *_strdup(char *str)
 {
 	/* Varaible declaration */
-	int len;
+	int len, i;
 	char *_str;
 
 
