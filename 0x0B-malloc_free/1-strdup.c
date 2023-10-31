@@ -12,6 +12,8 @@ char *_strdup(char *str)
 {
 	/* Varaible declaration */
 	int len;
+	char *_str;
+
 
 	if (str == NULL)
 		return (NULL);
