@@ -15,20 +15,22 @@ int **alloc_grid(int w, int h)
 
 	if (w <= 0 || h <= 0)
 		return (NULL);
-	ar = malloc((w * sizeof(int *)));
+	ar = malloc(h * sizeof(int *));
 	if (ar == NULL)
 	{
-		free(ar);
 		return (NULL);
 	}
-	for (i = 0; i < w; i++)
+	for (i = 0; i < h; i++)
 	{
-		ar[i] = malloc(h * sizeof(int *));
-	}
-	for (i = 0; i < w; i++)
-	{
+		ar[i] = malloc(w * sizeof(int *));
 		if (ar[i] == NULL)
-			free(ar[i]);
+		{
+			for (; i >= 0; i--)
+				free(ar[i]);
+			free(ar);
+			return (NULL);
+		}
+
 	}
 	for (i = 0; i < h; i++)
 	{
@@ -36,11 +38,6 @@ int **alloc_grid(int w, int h)
 		{
 			ar[i][j] = 0;
 		}
-	}
-	if (ar == NULL)
-	{
-		free(ar);
-		return (NULL);
 	}
 	return (ar);
 }
