@@ -24,7 +24,6 @@ unsigned int _len(char *str)
  * @newStr: Newly formed string
  * @n: Number of bytes
  * @l2: Length of s2
- * @l1: Len of s1
  * Return: Nothing
  */
 void _strcpy(char *s1, char *s2, char *newStr, unsigned int n, unsigned int l2)
