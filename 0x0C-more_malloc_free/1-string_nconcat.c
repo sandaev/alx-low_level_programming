@@ -10,7 +10,7 @@ unsigned int _len(char *str)
 {
 	unsigned int x;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == ' ')
 		return (0);
 
 	for (x = 0; *str++ != '\0'; x++)
@@ -27,8 +27,7 @@ unsigned int _len(char *str)
  * @l1: Len of s1
  * Return: Nothing
  */
-void _strcpy(char *s1, char *s2, char *newStr, unsigned int n,
-		unsigned int l1, unsigned int l2)
+void _strcpy(char *s1, char *s2, char *newStr, unsigned int n, unsigned int l2)
 {
 	int idx;
 
@@ -81,6 +80,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (newStr == NULL)
 		return (NULL);
 	/* Copies strings */
-	_strcpy(s1, s2, newStr, n, l1, l2);
+	_strcpy(s1, s2, newStr, n, l2);
 	return (newStr);
 }
