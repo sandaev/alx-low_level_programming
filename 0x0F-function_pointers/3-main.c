@@ -12,7 +12,7 @@ int (*get_op_func(char *s))(int, int);
  * @argc: argument count.
  * @argv: argument vector.
  *
- * Return: Always 0.
+ * Return: Always return 0.
  */
 int main(int argc, char *argv[])
 {
