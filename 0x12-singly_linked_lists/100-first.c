@@ -11,7 +11,7 @@
 void start_func(void)
 {
 	char *str = "You're beat! and yest, you must allow,";
-	char *str2 = "\mI bore my house upon my back!";
+	char *str2 = "\nI bore my house upon my back!";
 
 	printf("%s%s\n", str, str2);
 }
