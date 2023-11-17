@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_list - Prints a singly linked list
