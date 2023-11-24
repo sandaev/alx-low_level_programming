@@ -1,2 +1,1 @@
-Solution to tasks on bit manipulation project.
-ALX SE Cohort 20
+Root folder for my solution to tasks on bit manipulation
